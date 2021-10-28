@@ -52,4 +52,17 @@ router.get('/balance/withdrawl', function(req, res, next) {
   res.send('respond balance widthdrawl');
 });
 
+
+// /user/create/new
+// /user/info/bank
+
+router.post('/create/new', function (req, res, next) {
+  res.send('respond create new user');
+});
+
+router.get('/info/bank', function (req, res, next) {
+  res.send('respond user bank info');
+});
+
+
 module.exports = router;
