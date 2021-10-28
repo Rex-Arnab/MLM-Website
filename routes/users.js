@@ -1,6 +1,16 @@
 var express = require('express');
 var router = express.Router();
 
+// Connect with MongoDB database and check if connection is successful
+var mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://test:test@cluster0.13frr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
+  console.log('Connected to MongoDB database');
+});
+
+    
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
