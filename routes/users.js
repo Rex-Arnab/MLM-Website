@@ -13,7 +13,7 @@ db.once('open', function () {
     
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('respond User Function');
 });
 // /user/info
 // /user/level
@@ -25,31 +25,31 @@ router.get('/', function(req, res, next) {
 
 // get user referel code
 router.get('/referel/code', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('respond Referal code');
 });
 // get user referel count
 router.get('/referel/count', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('respond Referel Count');
 });
 // get user info
 router.get('/info', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('respond user info');
 });
 // get user level
 router.get('/level', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('respond user level');
 });
 // get user balance
 router.get('/balance', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('respond balance');
 });
 // get user balance transfer
 router.get('/balance/transfer', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('respond balance transfer');
 });
 // get user balance withdrawl
 router.get('/balance/withdrawl', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('respond balance widthdrawl');
 });
 
 module.exports = router;
