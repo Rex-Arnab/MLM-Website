@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var shareRouter = require('./routes/share');
 var globalRouter = require('./routes/global');
+var txdRouter = require('./routes/transaction.js');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/share', shareRouter);
 app.use('/global', globalRouter);
+app.use('/txd', txdRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
